@@ -1,0 +1,118 @@
+@layout('layouts.app')
+@section('sec')
+@endsection
+@section('navbar')
+@endsection
+       <!--animation nav-->
+@section('custom')
+    <div class="container-fluid header">
+       <div class="container">
+            <div class="row  pt-md-5">
+
+                <div class="col">
+                    <h1 class="banneranimation display-4 text-light mt-5 font-weight-bold "> Fitness is a <br>Mentality<br>
+                        <span class="slidingHorizontal">
+                            <span href="/login">Build your dream self.</span> 
+                            <span>Stay fit.</span> 
+                            <span>Stay Healthy.</span>
+                        </span><br>
+                        <span class ="spancenter">
+                            <a class = "btn btn-primary btn-lg" href="/register"> Start Your Journey</a>
+                    </h1> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--
+        p<div class ="container">
+        <div class="row hello">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="../asset/img/header-bg.jpeg">
+                </div>
+            </div>
+           
+        </div>
+    </div> 
+-->
+
+    <!-- how it works section -->
+    <div class="container-fluid">
+        <div class="container features py-5">
+            <h1 class="heading t-align"><a href="/abs">Packages</a></h1>
+            <div class="row my-4">
+
+                <div class="col-md-4 shadow-lg">
+                    <div class="card border-0 py-4 text-center ">
+                        <div class="card-body">
+                                <!--<iframe width="250" height="200"
+                                src="https://www.youtube.com/embed/vyv1k5BHl18?start=20&autoplay=0&controls=0">
+                                </iframe>-->
+                                <img  height="250" width="200" src="../asset/img/abs.jpg" alt="Abs image">
+                                <h5 class="card-title font-weight-bold">Abs Workout</h5>
+                            <a href="/register" class="btn btn-primary rounded-0">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 shadow-lg">
+                    <div class="card border-0 py-4 text-center ">
+                        <div class="card-body">
+                                <iframe width="250" height="300"
+                                src="https://www.youtube.com/embed/XCPA4cX7P7U?start=40&autoplay=0&controls=1">
+                                </iframe>
+                            <h5 class="card-title font-weight-bold">Biceps and Triceps Workout</h5>
+                            <a href="/register" class="btn btn-primary rounded-0">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 shadow-lg">
+                    <div class="card border-0 py-4 text-center ">
+                        <div class="card-body">
+                                <iframe width="250" height="300"
+                                src="https://www.youtube.com/embed/Cd14FbIea9s?start=50&autoplay=0&controls=1">
+                                </iframe>
+                            <h5 class="card-title font-weight-bold">Chest Workout</h5>
+                            <a href="/register" class="btn btn-primary rounded-0">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+
+                   
+
+            </div>
+        </div>
+    </div>
+    @section('tips')
+        <div class="container-fluid">
+            <div id="tips" class="jumbotron t-align">
+                        <h3><strong>Did you know</strong></h3>
+                        <h5>Only 10% of people are succesful in losing weight through diet alone </h5>
+            </div>
+        </div>
+    @endsection
+    
+    <!--newsletter section-->
+    
+@endsection
+     
+
+@section('footer')
+@endsection
+@section('brost')
+        <div class="container">
+            <div class="row col md-12">
+                <div class = jumbotron >
+                    <form action="/brost" method="POST">
+                        <input type="number" class="form-group" placeholder="enter age" name="age"><br>
+                        <input type="number" class="form-group" placeholder="enter weight" name="weight"><br>
+                        <p id="brost"></p>
+                        <button class="btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+@endsection
+
+
+   

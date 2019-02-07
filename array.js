@@ -1,0 +1,1 @@
+console.log([...Array(10)].map(_ => '🔥').join(''));
